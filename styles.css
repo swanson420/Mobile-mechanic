@@ -1,6 +1,6 @@
 @layer components {
     .form-input {
-        /* This ensures text is black in light mode and white in dark mode */
+        /* This force-sets text to dark gray in light mode and white in dark mode */
         @apply w-full p-4 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition-all placeholder:text-slate-400;
     }
 }
