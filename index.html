@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+                <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,10 +10,9 @@
 </head>
 <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
 
-    <!-- Navigation -->
     <nav class="fixed w-full z-50 backdrop-blur-md bg-white/70 dark:bg-slate-900/70 border-b border-slate-200 dark:border-slate-800">
         <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-2 font-bold text-xl">
+            <div class="flex items-center gap-2 font-bold text-xl text-slate-900 dark:text-white">
                 <i data-lucide="wrench" class="text-blue-600"></i>
                 <span>Mobile<span class="text-blue-600">Mechanic</span></span>
             </div>
@@ -21,65 +20,60 @@
         </div>
     </nav>
 
-    <!-- Hero -->
     <header class="pt-32 pb-16 px-4 text-center">
-        <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Expert Repairs, <span class="text-blue-600">In Your Driveway.</span></h1>
-        <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-8">Springfield's premier mobile mechanic. I bring the full shop experience to your doorstep.</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-slate-900 dark:text-white">Expert Repairs, <span class="text-blue-600">In Your Driveway.</span></h1>
+        <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-8">Springfield's premier mobile mechanic. I bring the shop to you.</p>
     </header>
 
-    <!-- Scheduling Section -->
     <section id="schedule" class="py-12 px-4">
         <div class="max-w-3xl mx-auto bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 p-8">
-            <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"><i data-lucide="calendar"></i> Book a Diagnostic</h2>
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-2 text-slate-900 dark:text-white">
+                <i data-lucide="calendar"></i> Book a Diagnostic
+            </h2>
             
-            <!-- FORM UPDATED WITH YOUR UNIQUE ID -->
             <form action="https://formspree.io/f/mzdojyqr" method="POST" class="space-y-4">
                 <div class="grid md:grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-sm font-semibold mb-1">Full Name</label>
-                        <input type="text" name="name" placeholder="John Doe" required class="form-input">
+                        <label class="block text-sm font-semibold mb-1 text-slate-700 dark:text-slate-300">Full Name</label>
+                        <input type="text" name="name" placeholder="Your Name" required class="form-input">
                     </div>
                     <div>
-                        <label class="block text-sm font-semibold mb-1">Phone Number</label>
+                        <label class="block text-sm font-semibold mb-1 text-slate-700 dark:text-slate-300">Phone Number</label>
                         <input type="tel" name="phone" placeholder="(417) 555-0123" required class="form-input">
                     </div>
                 </div>
                 
                 <div>
-                    <label class="block text-sm font-semibold mb-1">What's the issue?</label>
-                    <select name="issue" required class="form-input appearance-none">
+                    <label class="block text-sm font-semibold mb-1 text-slate-700 dark:text-slate-300">What's the issue?</label>
+                    <select name="issue" required class="form-input appearance-none cursor-pointer">
                         <option value="I Don't Know">I Don't Know / Diagnostic Needed</option>
-                        <option value="Brakes">Brakes (Squealing/Grinding)</option>
-                        <option value="Engine Light">Engine Light / Rough Run</option>
-                        <option value="Fluid Leak">Oil / Fluid Leak</option>
-                        <option value="Battery/Starter">Battery / Alternator / Starter</option>
-                        <option value="Other">Other (Describe below)</option>
+                        <option value="Brakes">Brakes</option>
+                        <option value="Engine Light">Engine Light</option>
+                        <option value="Oil Leak">Oil / Fluid Leak</option>
+                        <option value="Battery">Battery / Starter</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
 
                 <div>
-                    <label class="block text-sm font-semibold mb-1">Additional Details</label>
-                    <textarea name="message" placeholder="Year, Make, Model and what symptoms you're seeing..." rows="4" class="form-input"></textarea>
+                    <label class="block text-sm font-semibold mb-1 text-slate-700 dark:text-slate-300">Vehicle & Symptoms</label>
+                    <textarea name="message" placeholder="Year, Make, Model..." rows="4" class="form-input"></textarea>
                 </div>
 
-                <!-- Anti-Spam Honeypot -->
                 <input type="text" name="_gotcha" style="display:none">
 
-                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition transform active:scale-95">
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition transform active:scale-95 shadow-lg">
                     Send Request to Mechanic
                 </button>
             </form>
         </div>
     </section>
 
-    <!-- Secure Payments -->
     <section id="pay" class="py-20 px-4 bg-slate-100 dark:bg-slate-900/50 text-center">
         <div class="max-w-xl mx-auto">
-            <h2 class="text-2xl font-bold mb-2">Secure Invoice Payment</h2>
-            <p class="text-slate-600 dark:text-slate-400 mb-8">All payments are processed via Stripe's encrypted gateway.</p>
-            
-            <!-- Replace the # with your actual Stripe/PayPal link when ready -->
-            <a href="#" target="_blank" class="flex items-center justify-center gap-3 bg-slate-900 dark:bg-white dark:text-slate-900 text-white p-4 rounded-xl font-bold hover:opacity-90 transition">
+            <h2 class="text-2xl font-bold mb-2 text-slate-900 dark:text-white">Secure Invoice Payment</h2>
+            <p class="text-slate-600 dark:text-slate-400 mb-8">Encrypted payments via Stripe gateway.</p>
+            <a href="#" class="flex items-center justify-center gap-3 bg-slate-900 dark:bg-white dark:text-slate-900 text-white p-4 rounded-xl font-bold hover:opacity-90 transition">
                 <i data-lucide="credit-card"></i> Pay Securely Online
             </a>
         </div>
